@@ -1,10 +1,10 @@
-# 🎭 ParaBank Test Automation Framework
+#  ParaBank Test Automation Framework
 
 A  web automation framework built with **Python**, **Playwright**, and **Pytest**. This suite tests the core authentication and user flows of the [ParaBank](https://parabank.parasoft.com) application using modern QA architecture patterns, dynamic data generation, and comprehensive reporting.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Page Object Model (POM):** Scalable, maintainable object-oriented structure separating page locators/actions from test logic.
 * **Dynamic Data Generation:** Uses dynamic user generation to ensure isolated, repeatable test execution without data collisions.
@@ -13,7 +13,7 @@ A  web automation framework built with **Python**, **Playwright**, and **Pytest*
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Language:** Python 3.10+
 * **Automation Tool:** Playwright Python
@@ -23,7 +23,7 @@ A  web automation framework built with **Python**, **Playwright**, and **Pytest*
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 Automation_Suite(ParaBank)/
 ├── Config/
@@ -48,7 +48,7 @@ Automation_Suite(ParaBank)/
 ---
 
 
-## 🧪 Executing Tests
+## Executing Tests
 
 ### Run Login Test Suite (Headed Firefox)
 ```bash
@@ -67,7 +67,7 @@ python -m pytest Tests/login_test.py --browser firefox --screenshot=only-on-fail
 
 ---
 
-## 📊Test Coverage Summary
+## Test Coverage Summary
 
 * **4 main modules covered - Registration, Login, Bill pay, Request Loan
 * **19 Test cases have been automated.
