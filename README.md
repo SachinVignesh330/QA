@@ -1,5 +1,2 @@
-# Git_Workshop
-Test_repo
-
-Dev Branch_01
-Feature_01
+#QA Projects
+My QA projects
