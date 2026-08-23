@@ -45,4 +45,3 @@ Test types include **Positive**, **Negative**, **Edge**, and **Security** cases 
 
 
 
-- This is a point-in-time manual regression pass; re-run affected test cases after each bug fix and update status/results accordingly.
