@@ -15,7 +15,7 @@ A web automation framework built with **Python**, **Playwright**, and **Pytest**
 
 ## Tech Stack
 
-* **Language:** Python 3.10+
+* **Language:** Python 3.14.7
 * **Automation Tool:** Playwright Python
 * **Test Runner:** Pytest
 * **Reporting:** Pytest-HTML
@@ -70,7 +70,7 @@ python -m pytest Tests/login_test.py --browser firefox --html=Reports/login_repo
 
 ---
 
-## 🐛 Defect Tracking & Known Issues
+## Defect Tracking & Known Issues
 
 The target application (ParaBank) has known server-side defects when handling invalid credentials. Rather than removing these valid test scenarios, they are annotated with Pytest’s `@pytest.mark.xfail`:
 
