@@ -73,7 +73,3 @@ python -m pytest Tests/login_test.py --browser firefox --html=Reports/login_repo
 ## Defect Tracking & Known Issues
 
 The target application (ParaBank) has known server-side defects when handling invalid credentials. Rather than removing these valid test scenarios, they are annotated with Pytest’s `@pytest.mark.xfail`:
-
-
-* **Author:** Sachin  
-* **Role:** Quality Assurance Engineer Intern / Trainee
