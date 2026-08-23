@@ -1,6 +1,6 @@
 # ParaBank Manual Testing Suite
 
-This is a manual QA testing for **ParaBank**, the demo online banking application ([parabank.parasoft.com](https://parabank.parasoft.com)). It covers requirements traceability, test case execution, and bug tracking across all core banking workflows.
+This is a manual QA testing for **ParaBank**, the demo online banking application ([parabank.parasoft.com](https://parabank.parasoft.com)). It covers requirements traceability, test case execution and bug tracking across all core banking workflows.
 
 ## Contents
 
