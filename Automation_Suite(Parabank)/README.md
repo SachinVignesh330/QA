@@ -1,10 +1,10 @@
-# 🎭 ParaBank Test Automation Framework
+# ParaBank Test Automation Framework
 
 A web automation framework built with **Python**, **Playwright**, and **Pytest**. This suite tests the core authentication and user flows of the [ParaBank](https://parabank.parasoft.com) application using modern QA architecture patterns, dynamic data generation, and comprehensive reporting.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Page Object Model (POM):** Scalable, maintainable object-oriented structure separating page locators/actions from test logic.
 * **Dynamic Data Generation:** Uses dynamic user generation to ensure isolated, repeatable test execution without data collisions.
@@ -13,7 +13,7 @@ A web automation framework built with **Python**, **Playwright**, and **Pytest**
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python 3.10+
 * **Automation Tool:** Playwright Python
@@ -23,7 +23,7 @@ A web automation framework built with **Python**, **Playwright**, and **Pytest**
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Automation_Suite(ParaBank)/
@@ -47,34 +47,9 @@ Automation_Suite(ParaBank)/
 └── requirements.txt                 # Project dependencies
 ```
 
----
 
-## ⚡ Quick Start & Setup
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/Automation_Suite_ParaBank.git
-cd Automation_Suite_ParaBank
-```
-
-### 2. Activate Virtual Environment
-```bash
-# Linux/macOS
-source .venv/bin/activate
-
-# Windows
-.venv\Scripts\activate
-```
-
-### 3. Install Dependencies & Playwright Browsers
-```bash
-pip install -r requirements.txt
-playwright install
-```
-
----
-
-## 🧪 Executing Tests
+## Executing Tests
 
 ### Run Login Test Suite (Headed Firefox)
 ```bash
@@ -86,14 +61,9 @@ python -m pytest Tests/login_test.py --headed --browser firefox
 python -m pytest Tests/login_test.py --browser firefox --html=Reports/login_report.html --self-contained-html
 ```
 
-### Capture Screenshots Automatically on Failure
-```bash
-python -m pytest Tests/login_test.py --browser firefox --screenshot=only-on-failure --html=Reports/login_report.html --self-contained-html
-```
-
 ---
 
-## 📊 Test Coverage Summary
+## Test Coverage Summary
 
 * **Modules Covered:** 4 main modules (Registration, Login, Bill Pay, Request Loan)
 * **Total Automation Coverage:** 19 automated test cases
@@ -104,15 +74,6 @@ python -m pytest Tests/login_test.py --browser firefox --screenshot=only-on-fail
 
 The target application (ParaBank) has known server-side defects when handling invalid credentials. Rather than removing these valid test scenarios, they are annotated with Pytest’s `@pytest.mark.xfail`:
 
-```python
-@pytest.mark.xfail(reason="Known Bug: Server returns 500 error instead of validation text")
-def test_invalid_login(page):
-    # Test execution logic
-```
-
----
-
-## 📬 Contact & Author
 
 * **Author:** Sachin  
 * **Role:** Quality Assurance Engineer Intern / Trainee
