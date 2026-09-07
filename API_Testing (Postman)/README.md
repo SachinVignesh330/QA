@@ -55,19 +55,18 @@ The test suite consists of **27 structured test cases** covering the primary end
 
 ```text
 .
-├── docs/
-│   ├── Restful_Booker_API_Suite.xlsx  # Complete Test Plan, Test Cases, & Bug Reports
-│   ├── Test_Plan.pdf                   # QA Strategy & Scope Document
-│   └── Defect_Report.pdf               # Detailed Bug Documentation
-├── postman/
-│   ├── Restful_Booker_Collection.json  # Exported Postman Collection (v2.1)
-│   └── Restful_Booker_Environment.json # Postman Environment Config
-├── .gitignore
-└── README.md                           # Project Overview & Scope
+├── Restful_Booker_API_Suite.xlsx  # Complete Test Plan, Test Cases, & Bug Reports
+├── postman/                            # Store exported JSON files here when ready
+│   ├── Restful_Booker_Collection.json
+│   └── Restful_Booker_Environment.json
+├── SS/                                 # Screenshots & execution evidence (SS_001.png - SS_027.png)
+│   ├── SS_001.png
+│   ├── SS_002.png
+│   └── ...
+└── README.md                           # Project Overview & Scope                  # Project Overview & Scope
 ```
 
----
-
+--
 ##  Security & Data Integrity Analysis
 * **SQL Injection Handling:** Tested using `' OR 1=1 --` payloads in text fields (`firstname`). The API safely escaped inputs and stored them as literal plain text without executing backend SQL code.
 * **Authentication Enforcement:** Evaluated token parsing and header checks across state-modifying requests (`PUT`, `DELETE`).
